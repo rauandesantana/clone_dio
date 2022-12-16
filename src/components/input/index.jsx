@@ -5,7 +5,7 @@ import {
   InputObject, 
 } from './style';
 
-const Input = ({leftIcon, name, ...rest}) => {
+const Input = ({leftIcon, ...rest}) => {
   return (
     <InputContainer>
         {(leftIcon) ? <InputIconContainer>{leftIcon}</InputIconContainer> : null}
