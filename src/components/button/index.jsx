@@ -1,5 +1,8 @@
 import React from 'react'
-import { ButtonContainer, ButtonObject } from './style';
+import { 
+  ButtonContainer, 
+  ButtonObject, 
+} from './style';
 
 const Button = ({title, onClick, variant = false}) => {
   return (
