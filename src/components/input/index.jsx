@@ -1,9 +1,5 @@
 import React from 'react';
-import { 
-  InputContainer, 
-  InputIconContainer, 
-  InputObject, 
-} from './style';
+import { InputContainer, InputIconContainer, InputObject } from './style';
 
 const Input = ({leftIcon, ...rest}) => {
   return (

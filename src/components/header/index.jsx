@@ -1,10 +1,6 @@
 import React from 'react';
 import LogoDio from "../../assets/images/logo_dio.svg";
-import { 
-    HeaderContainer, 
-    HeaderContent, 
-    HeaderLogo, 
-} from './style';
+import { HeaderContainer, HeaderContent, HeaderLogo } from './style';
 import { Row } from '../../style/global_style';
 
 const Header = ({leftContent, rightContent}) => {

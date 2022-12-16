@@ -1,16 +1,10 @@
 import React from "react";
 import BannerDio from "./assets/images/banner.png";
-import { 
-  Row,
-  Column, 
-  Container,
-} from "./style/global_style";
-import { 
-  ImageBanner, 
-  Text, 
-} from "./style/app";
+import { Row, Column, Container } from "./style/global_style";
+import { ImageBanner } from "./style/app";
 import Button from "./components/button";
 import Header from "./components/header";
+import Text from "./components/text";
 
 const rightContent = <Row alignVertical="center">
   <Text marginRight="10px">Home</Text>
