@@ -6,7 +6,6 @@ export const InputContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
 `;
 
 export const InputIconContainer = styled.div`
