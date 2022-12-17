@@ -7,6 +7,14 @@ export const ButtonContainer = styled.div`
     justify-content: center;
     align-items: center;
 
+    ${({width}) => (width !== "") && css`
+        width: ${width};
+    `}
+
+    ${({height}) => (height !== "") && css`
+        height: ${height};
+    `}
+
     ${({variant}) => (variant === true) && css`
         margin: 10px;
     `}

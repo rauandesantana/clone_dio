@@ -6,6 +6,14 @@ export const InputContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    ${({width}) => (width !== "") && css`
+        width: ${width};
+    `}
+
+    ${({height}) => (height !== "") && css`
+        height: ${height};
+    `}
 
     ${({marginLeft}) => (marginLeft !== "") && css`
         margin-left: ${marginLeft};

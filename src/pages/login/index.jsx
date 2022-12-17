@@ -24,7 +24,7 @@ const Login = () => {
         <Column>
           <Row alignContent="space-around">
             <Column width="565px" alignContent="center">
-              <Text fontWeight="700" size="32px"  value={
+              <Text width="388px" fontWeight="700" size="32px" value={
                 "A plataforma para você aprender com experts, dominar as principais " +
                 "tecnologias e entrar mais rápido nas empresas mais desejadas."
               } />
@@ -33,12 +33,12 @@ const Login = () => {
               <Column width="300px" alignContent="center">
                 <Text fontWeight="700" size="32px" marginBottom="10px" value="Faça seu cadastro" />
                 <Text fontWeight="400" size="18px" marginBottom="35px" value="Faça seu login e make the change._" />
-                <Input placeholder="E-mail" leftIcon={<MdEmail />} type="email" marginBottom="15px" />
-                <Input placeholder="Password" leftIcon={<MdLock />} type="password" marginBottom="35px" />
-                <Button title="Entrar" variant={true} marginBottom="45px" onClick={() => {}} />
-                <Row height="40px" alignContent="space-between">
-                  <Link title="Esqueci minha senha" variant={true} />
-                  <Link title="Criar conta" />
+                <Input width="290px" placeholder="E-mail" leftIcon={<MdEmail />} type="email" marginBottom="15px" />
+                <Input width="290px" placeholder="Password" leftIcon={<MdLock />} type="password" marginBottom="35px" />
+                <Button width="270px" title="Entrar" variant={true} marginBottom="45px" onClick={() => {}} />
+                <Row width="290px" height="40px" alignContent="space-between">
+                  <Link title="Esqueci minha senha" variant={true} onClick={() => alert("Recuperação de Senha!") } />
+                  <Link title="Criar conta" onClick={() => navigate("/cadastrar") } />
                 </Row>
               </Column>
             </Row>
