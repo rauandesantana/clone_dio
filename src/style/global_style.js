@@ -42,12 +42,12 @@ export const Row = styled.div`
         height: ${height};
     `}
 
-    ${({alignHorizontal}) => (alignHorizontal !== "") && css`
-        justify-content: ${alignHorizontal};
+    ${({alignContent}) => (alignContent !== "") && css`
+        justify-content: ${alignContent};
     `}
 
-    ${({alignVertical}) => (alignVertical !== "") && css`
-        align-items: ${alignVertical};
+    ${({alignItems}) => (alignItems !== "") && css`
+        align-items: ${alignItems};
     `}
 `;
 
@@ -66,11 +66,11 @@ export const Column = styled.div`
         height: ${height};
     `}
 
-    ${({alignHorizontal}) => (alignHorizontal !== "") && css`
-        align-items: ${alignHorizontal};
+    ${({alignContent}) => (alignContent !== "") && css`
+        justify-content: ${alignContent};
     `}
 
-    ${({alignVertical}) => (alignVertical !== "") && css`
-        justify-content: ${alignVertical};
+    ${({alignItems}) => (alignItems !== "") && css`
+        align-items: ${alignItems};
     `}
 `;

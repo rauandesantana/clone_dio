@@ -1,10 +1,17 @@
 import React from 'react';
 import { ButtonContainer, ButtonObject } from './style';
 
-const Button = ({title, onClick, variant = false}) => {
+const Button = ({title, onClick, variant = false, marginLeft, marginRight, marginTop, marginBottom}) => {
+  const disabled = (onClick === undefined);
+  
   return (
-    <ButtonContainer variant={variant}>
-      <ButtonObject onClick={onClick} variant={variant}>{title}</ButtonObject>
+    <ButtonContainer
+    marginLeft={marginLeft} 
+    marginRight={marginRight}
+    marginTop={marginTop}
+    marginBottom={marginBottom}
+    variant={variant}
+    ><ButtonObject onClick={onClick} variant={variant} disabled={disabled}>{title}</ButtonObject>
     </ButtonContainer>
   );
 }

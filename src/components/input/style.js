@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const InputContainer = styled.div`
     border-bottom: 2px solid #3B3450;
@@ -6,6 +6,22 @@ export const InputContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    ${({marginLeft}) => (marginLeft !== "") && css`
+        margin-left: ${marginLeft};
+    `}
+
+    ${({marginRight}) => (marginRight !== "") && css`
+        margin-right: ${marginRight};
+    `}
+
+    ${({marginTop}) => (marginTop !== "") && css`
+        margin-top: ${marginTop};
+    `}
+    
+    ${({marginBottom}) => (marginBottom !== "") && css`
+        margin-bottom: ${marginBottom};
+    `}
 `;
 
 export const InputIconContainer = styled.div`

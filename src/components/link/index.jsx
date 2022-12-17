@@ -1,9 +1,9 @@
 import React from 'react';
 import { LinkObject } from './style';
 
-const Link = ({title, href}) => {
+const Link = ({title, href, variant}) => {
   return (
-    <LinkObject href={href}>{title}</LinkObject>
+    <LinkObject href={href} variant={variant}>{title}</LinkObject>
   );
 }
 

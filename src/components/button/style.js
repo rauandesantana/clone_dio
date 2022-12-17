@@ -10,6 +10,22 @@ export const ButtonContainer = styled.div`
     ${({variant}) => (variant === true) && css`
         margin: 10px;
     `}
+
+    ${({marginLeft}) => (marginLeft !== "") && css`
+        margin-left: ${marginLeft};
+    `}
+
+    ${({marginRight}) => (marginRight !== "") && css`
+        margin-right: ${marginRight};
+    `}
+
+    ${({marginTop}) => (marginTop !== "") && css`
+        margin-top: ${marginTop};
+    `}
+
+    ${({marginBottom}) => (marginBottom !== "") && css`
+        margin-bottom: ${marginBottom};
+    `}
 `;
 
 export const ButtonObject = styled.button`
@@ -23,9 +39,6 @@ export const ButtonObject = styled.button`
     border-radius: 2rem;
     background-color: #565656;
     cursor: pointer;
-
-    &:hover { filter: brightness(1.05); }
-    &:active { filter: brightness(1.2); }
 
     ${({variant}) => (variant === true) && css`
         padding: 4px 10px;
@@ -41,5 +54,15 @@ export const ButtonObject = styled.button`
             top: -6px;
             left: -6px;
         }
+    `}
+    
+    ${({disabled}) => (disabled === false) && css`
+        &:hover { filter: brightness(1.05); }
+        &:active { filter: brightness(1.2); }
+    `}
+
+    ${({disabled}) => (disabled === true) && css`
+        opacity: 0.5;
+        cursor: default;
     `}
 `;
