@@ -35,7 +35,7 @@ const Login = () => {
                 <Text fontWeight="400" size="18px" marginBottom="35px" value="Faça seu login e make the change._" />
                 <Input width="290px" placeholder="E-mail" leftIcon={<MdEmail />} type="email" marginBottom="15px" />
                 <Input width="290px" placeholder="Password" leftIcon={<MdLock />} type="password" marginBottom="35px" />
-                <Button width="270px" title="Entrar" variant={true} marginBottom="45px" onClick={() => {}} />
+                <Button width="270px" title="Entrar" variant={true} marginBottom="45px" onClick={() => navigate("/feed") } />
                 <Row width="290px" height="40px" alignContent="space-between">
                   <Link title="Esqueci minha senha" variant={true} onClick={() => alert("Recuperação de Senha!") } />
                   <Link title="Criar conta" onClick={() => navigate("/cadastrar") } />

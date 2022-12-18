@@ -36,7 +36,7 @@ const Cadastrar = () => {
                 <Input width="290px" placeholder="Nome completo" leftIcon={<MdPerson />} type="text" marginBottom="15px" />
                 <Input width="290px" placeholder="E-mail" leftIcon={<MdEmail />} type="email" marginBottom="15px" />
                 <Input width="290px" placeholder="Password" leftIcon={<MdLock />} type="password" marginBottom="35px" />
-                <Button width="270px" title="Criar minha conta" variant={true} marginBottom="35px" onClick={() => {}} />
+                <Button width="270px" title="Criar minha conta" variant={true} marginBottom="35px" onClick={() => alert(`Criando Conta!`) } />
                 <Text width="372px" marginBottom="15px" value={
                   'Ao clicar em "Criar minha conta", declaro que aceito ' +
                   'as Políticas de Privacidade e os Termos de Uso da DIO.'
