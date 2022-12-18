@@ -10,9 +10,13 @@ export const LinkObject = styled.a`
         color: #E5E044;
     `}
     
-    ${({disabled}) => (disabled === false) && css`
+    ${({disabled, noEfect}) => (disabled === false && noEfect === false) && css`
         &:hover { filter: brightness(1.2); }
         &:active { filter: brightness(1.8); }
+    `}
+
+    ${({noEfect}) => (noEfect === true) && css`
+        color: #FFF;
     `}
 
     ${({disabled}) => (disabled === true) && css`

@@ -9,6 +9,10 @@ export const TextObject = styled.p`
         height: ${height};
     `}
 
+    ${({color}) => (color !== "") && css`
+        color: ${color};
+    `}
+
     ${({size}) => (size !== "") && css`
         font-size: ${size};
     `}

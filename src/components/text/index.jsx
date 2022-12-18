@@ -1,11 +1,12 @@
 import React from "react";
 import { TextObject } from "./style";
 
-const Text = ({value, width, height, size, lineHeight, fontWeight, variant, marginLeft, marginRight, marginTop, marginBottom}) => {
+const Text = ({value, color, width, height, size, lineHeight, fontWeight, variant, marginLeft, marginRight, marginTop, marginBottom}) => {
   return (
     <TextObject 
     width={width} 
     height={height} 
+    color={color}
     size={size} 
     ineHeight={lineHeight} 
     fontWeight={fontWeight} 

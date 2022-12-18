@@ -1,7 +1,7 @@
 import React from 'react';
 import { LinkObject } from './style';
 
-const Link = ({title, href, target, variant, onClick}) => {
+const Link = ({title, href, target, variant, noEfect, onClick}) => {
   const disabled = (onClick === undefined && href === undefined);
 
   return (
@@ -11,6 +11,7 @@ const Link = ({title, href, target, variant, onClick}) => {
     variant={variant} 
     onClick={onClick} 
     disabled={disabled}
+    noEfect={noEfect}
     >{title}</LinkObject>
   );
 }

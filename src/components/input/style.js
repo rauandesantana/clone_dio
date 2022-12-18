@@ -6,6 +6,12 @@ export const InputContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    ${({variant}) => (variant === true) && css`
+        border: none;
+        background-color: #2D2D37;
+        border-radius: 0.5rem;
+    `}
     
     ${({width}) => (width !== "") && css`
         width: ${width};
@@ -34,6 +40,10 @@ export const InputContainer = styled.div`
 
 export const InputIconContainer = styled.div`
     margin: 0px 10px;
+
+    ${({variant}) => (variant === true) && css`
+        margin-top: 5px;
+    `}
 `;
 
 export const InputObject = styled.input`
@@ -41,4 +51,8 @@ export const InputObject = styled.input`
     height: 35px;
     border: none;
     background-color: transparent;
+
+    ${({variant}) => (variant === true) && css`
+        border-radius: 0rem 0.5rem 0.5rem 0rem;
+    `}
 `;
