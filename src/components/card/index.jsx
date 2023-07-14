@@ -40,11 +40,11 @@ const Card = ({banner, avatar, userName, timeInfo, title, resume, tags, hots, co
                     <CardText size="14px" fontWeight="500">{tags}</CardText>
                     <CardReactions>
                         <CardReact>
-                            <img src={IconHot} />
+                            <img src={IconHot} alt='Icon Hot' />
                             <span>{hots}</span>
                         </CardReact>
                         <CardReact>
-                            <img src={IconComments} />
+                            <img src={IconComments} alt='Icon Comments' />
                             <span>{comments}</span>
                         </CardReact>
                     </CardReactions>

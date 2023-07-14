@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { MdSearch, MdKeyboardArrowDown } from "react-icons/md";
 import CardBanner1 from "../../assets/images/banner_card_1.jpg";
 import CardBanner2 from "../../assets/images/banner_card_2.jpg";
@@ -14,7 +13,6 @@ import Input from "../../components/input";
 import Link from "../../components/link";
 
 const Feed = () => {
-  const navigate = useNavigate();
 
   const leftContent = <Row alignItems="center">
     <Input width="290px" placeholder="Pesquisar" leftIcon={<MdSearch size="25.5px" />} type="text" marginLeft="35px" variant={true} />
